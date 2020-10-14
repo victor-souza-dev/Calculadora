@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Avançada</title>
+    <!-- Arquivo CSS Externo -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculadora">
+            
+            <div class="display" id="display">0</div>
+
+            <div class="linha">
+                <div class="tecla" onclick="pegarValor('7')">7</div>
+                <div class="tecla" onclick="pegarValor('8')">8</div>
+                <div class="tecla" onclick="pegarValor('9')">9</div>
+                <div class="tecla" onclick="pegarOperador('/')">/</div>
+                <div class="tecla" onclick="pegarValor('C')">C</div>
+            </div>
+
+            <div class="linha">
+                <div class="tecla" onclick="pegarValor('4')">4</div>
+                <div class="tecla" onclick="pegarValor('5')">5</div>
+                <div class="tecla" onclick="pegarValor('6')">6</div>
+                <div class="tecla" onclick="pegarOperador('*')">*</div>
+                <div class="tecla" onclick="pegarValor('%')">%</div>
+            </div>
+
+            <div class="linha">
+                <div class="tecla" onclick="pegarValor('1')">1</div>
+                <div class="tecla" onclick="pegarValor('2')">2</div>
+                <div class="tecla" onclick="pegarValor('3')">3</div>
+                <div class="tecla" onclick="pegarOperador('-')">-</div>
+                <div class="tecla igual" onclick="pegarOperador('=')">=</div>
+            </div>
+
+            <div class="linha">
+                <div class="tecla zero" onclick="pegarValor('0')">0</div>
+                <div class="tecla" onclick="pegarValor('.')">.</div>
+                <div class="tecla" onclick="pegarOperador('+')">+</div>
+            </div>
+
+        </div> <!-- fecha /calculadora -->
+    </div> <!-- fecha /container -->
+    <audio src="sfx/blip.ogg" id="blip"></audio>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

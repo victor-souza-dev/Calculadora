@@ -1,0 +1,81 @@
+/* Calculadora Avançada */
+
+/* Configurações básicas da página */
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    color: #c4c4c4;
+    background-color: #232323;
+    font-family: Consolas, 'Lucida Sans', Verdana, sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    width: 80%;
+    min-height: 800px;
+    margin: auto;
+    padding: 35px;
+    background-color: #f7f7f7;
+}
+
+.calculadora {
+    width: 250px;
+    height: 350px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: #313131;
+}
+
+.display {
+    padding: 0 8px;
+    font-size: 48px;
+    color: #151d14;
+    text-align: right;
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: #71836d;
+}
+
+.tecla {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 0 1px;
+    /*margin: 5px 0;*/
+    background-color: #505050;
+}
+
+.tecla:hover {
+background-color: #636363;
+cursor: pointer;
+transition: 0.5s;
+}
+
+.tecla:active {
+background-color: #20c3e0;
+transition: 0s
+}
+
+.linha {
+    margin: auto;
+    margin: 8px 0;
+}
+
+.zero {
+    width: 90px;
+}
+
+.igual {
+    height: 90px;
+    line-height: 90px;
+    float: right;
+    margin-right: 5px;
+}
